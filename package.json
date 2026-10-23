@@ -1,0 +1,22 @@
+{
+  "name": "sla-recalc",
+  "version": "1.0.0",
+  "description": "Recompute first-response and resolution SLAs from a raw ticket CSV using your own business hours, holidays and per-priority targets, and see where the helpdesk dashboard number is wrong. CSV and Markdown breach reports included.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "sla-recalc": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/sla.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "sla",
+    "business-hours",
+    "helpdesk",
+    "reporting"
+  ]
+}

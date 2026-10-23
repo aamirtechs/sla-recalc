@@ -1,0 +1,48 @@
+{
+  "utcOffsetMinutes": 0,
+  "businessHours": {
+    "0": null,
+    "1": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "2": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "3": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "4": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "5": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "6": null
+  },
+  "holidays": [
+    "2026-01-01"
+  ],
+  "targets": {
+    "urgent": {
+      "firstResponse": 60,
+      "resolution": 480
+    },
+    "high": {
+      "firstResponse": 120,
+      "resolution": 960
+    },
+    "normal": {
+      "firstResponse": 240,
+      "resolution": 1920
+    },
+    "low": {
+      "firstResponse": 480,
+      "resolution": 3840
+    }
+  }
+}
