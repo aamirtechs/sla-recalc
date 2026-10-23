@@ -158,4 +158,14 @@ export function buildSummary(rows) {
   return lines.join("\n");
 }
 
+export function parseConfigText(text) {
+  return JSON.parse(text);
+}
+
+export function evaluateCsvText(csvText, config) {
+  const tickets = parseCsv(csvText);
+  const rows = evaluateTickets(tickets, config);
+  return { tickets, rows, csv: toCsv(rows, OUTPUT_COLUMNS), summary: buildSummary(rows) };
+}
+
 export const OUTPUT_COLUMNS = ["id","created_at","first_reply_at","resolved_at","priority","team","first_response_business_minutes","first_response_calendar_minutes","first_response_breach","resolution_business_minutes","resolution_calendar_minutes","resolution_breach"];
